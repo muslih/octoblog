@@ -95,7 +95,7 @@ delicious_user:
 delicious_count: 3
 
 # Disqus Comments
-disqus_short_name: muslihblog
+disqus_short_name: muslihsblog
 disqus_show_comment_count: true
 
 # Google Analytics
