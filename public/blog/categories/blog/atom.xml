@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Muslih's blog]]></title>
-  <link href="http://yoursite.com/atom.xml" rel="self"/>
+  <title><![CDATA[Category: blog, | Muslih's blog]]></title>
+  <link href="http://yoursite.com/blog/categories/blog/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
   <updated>2013-06-10T11:53:59+08:00</updated>
   <id>http://yoursite.com/</id>
@@ -23,15 +23,12 @@
 <!-- more -->
 
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>bundle install
-</span><span class='line'>rake generate
-</span><span class='line'>rake preview</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, ipsam modi suscipit repudiandae obcaecati voluptatem fuga debitis illum voluptatum distinctio sed harum eveniet ad. Est, dicta aliquam harum exercitationem autem.</p>
+<p><code>
+bundle install
+rake generate
+rake preview
+</code>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, ipsam modi suscipit repudiandae obcaecati voluptatem fuga debitis illum voluptatum distinctio sed harum eveniet ad. Est, dicta aliquam harum exercitationem autem.</p>
 
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, ea, ullam, quisquam, quia voluptatum a placeat animi magnam laudantium quod velit accusamus mollitia quas amet maiores minima neque temporibus obcaecati.</p>
 
