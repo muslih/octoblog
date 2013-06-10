@@ -3,7 +3,7 @@ layout: post
 title: "finally i movin to octopress"
 date: 2013-06-10 11:49
 comments: true
-categories: blog, octopress
+categories: blog octopress
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, illo, officiis, recusandae, ullam tempore consequuntur inventore explicabo enim ab numquam aperiam porro ex perferendis rerum totam saepe maiores nesciunt ipsa
