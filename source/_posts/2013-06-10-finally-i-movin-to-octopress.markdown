@@ -6,15 +6,19 @@ comments: true
 categories: blog octopress
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, illo, officiis, recusandae, ullam tempore consequuntur inventore explicabo enim ab numquam aperiam porro ex perferendis rerum totam saepe maiores nesciunt ipsa
-<!-- more -->
+Today i decided my self to use octopress, the big reason i movin to this new stuff is a new challange, i can learn more about Ruby programming through this stuff, as ma lecturer said 'life simple and learn forever' <!-- more -->
+
+The big problem (depend on me) is getting errors when i running
 ```
-bundle install
 rake generate
 rake preview
 ```
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, ipsam modi suscipit repudiandae obcaecati voluptatem fuga debitis illum voluptatum distinctio sed harum eveniet ad. Est, dicta aliquam harum exercitationem autem.
+on my 'darkfury' netbook, setting everything set up and working correctly is probably going to be a pain in the ass, my effort was not useless i found i have different rake version, and i passed it by using  
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, ea, ullam, quisquam, quia voluptatum a placeat animi magnam laudantium quod velit accusamus mollitia quas amet maiores minima neque temporibus obcaecati.
+```
+bundle exec rake generate
+bundle exec rake preview
+```
+and hola, it works. When i seen it well i immediately opened my heroku, and deploy it there. Next i setting up domain name, and all was done!
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, quaerat, sequi dicta reprehenderit nobis optio assumenda maxime nemo fugit est omnis modi vel eligendi earum repudiandae quibusdam delectus! Beatae, alias.
+Next time i have create ma own octo theme and put it on ma github repo, the question is will i leave wordpress and keep dating with octopress? nope, i will use both, coz i love them both :D

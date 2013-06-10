@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[I'm <em>muslih</em>, <br/> a <em>web developer</em> from <em>banjarmasin</em>]]></title>
+  <title><![CDATA[I'm <em>muslih</em>, a web developer, nurse,<br/> coffee addict, and late-night insomniac.]]></title>
   <link href="http://muslih.zeen-studio.com/atom.xml" rel="self"/>
   <link href="http://muslih.zeen-studio.com/"/>
-  <updated>2013-06-10T14:51:29+08:00</updated>
+  <updated>2013-06-10T15:45:07+08:00</updated>
   <id>http://muslih.zeen-studio.com/</id>
   <author>
     <name><![CDATA[Muslih]]></name>
@@ -18,24 +18,27 @@
     <link href="http://muslih.zeen-studio.com/blog/2013/06/10/finally-i-movin-to-octopress/"/>
     <updated>2013-06-10T11:49:00+08:00</updated>
     <id>http://muslih.zeen-studio.com/blog/2013/06/10/finally-i-movin-to-octopress</id>
-    <content type="html"><![CDATA[<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, illo, officiis, recusandae, ullam tempore consequuntur inventore explicabo enim ab numquam aperiam porro ex perferendis rerum totam saepe maiores nesciunt ipsa</p>
+    <content type="html"><![CDATA[<p>Today i decided my self to use octopress, the big reason i movin to this new stuff is a new challange, i can learn more about Ruby programming through this stuff, as ma lecturer said &lsquo;life simple and learn forever&rsquo; <!-- more --></p>
 
-<!-- more -->
-
+<p>The big problem (depend on me) is getting errors when i running</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>bundle install
-</span><span class='line'>rake generate
+</pre></td><td class='code'><pre><code class=''><span class='line'>rake generate
 </span><span class='line'>rake preview</span></code></pre></td></tr></table></div></figure>
 
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, ipsam modi suscipit repudiandae obcaecati voluptatem fuga debitis illum voluptatum distinctio sed harum eveniet ad. Est, dicta aliquam harum exercitationem autem.</p>
+<p>on my &lsquo;darkfury&rsquo; netbook, setting everything set up and working correctly is probably going to be a pain in the ass, my effort was not useless i found i have different rake version, and i passed it by using</p>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, ea, ullam, quisquam, quia voluptatum a placeat animi magnam laudantium quod velit accusamus mollitia quas amet maiores minima neque temporibus obcaecati.</p>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>bundle exec rake generate
+</span><span class='line'>bundle exec rake preview</span></code></pre></td></tr></table></div></figure>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, quaerat, sequi dicta reprehenderit nobis optio assumenda maxime nemo fugit est omnis modi vel eligendi earum repudiandae quibusdam delectus! Beatae, alias.</p>
+
+<p>and hola, it works. When i seen it well i immediately opened my heroku, and deploy it there. Next i setting up domain name, and all was done!</p>
+
+<p>Next time i have create ma own octo theme and put it on ma github repo, the question is will i leave wordpress and keep dating with octopress? nope, i will use both, coz i love them both :D</p>
 ]]></content>
   </entry>
   
