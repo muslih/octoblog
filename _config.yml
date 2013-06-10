@@ -2,12 +2,12 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://yoursite.com
-title: Muslih's blog
-subtitle: pray, eat, code
+url: http://muslih.zeen-studio.com
+title: "I'm <em>muslih</em>, <br/> a <em>web developer</em> from <em>banjarmasin</em>"
+subtitle: 
 author: Muslih
 simple_search: http://google.com/search
-description:
+description: 
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
@@ -17,9 +17,9 @@ date_format: "ordinal"
 
 # RSS / Email (optional) subscription links (change if using something like Feedburner)
 subscribe_rss: /atom.xml
-subscribe_email:
+subscribe_email: muslihzarth@gmail.com
 # RSS feeds can list your email address if you like
-email:
+email: muslihzarth@gmail.com
 
 # ----------------------- #
 #    Jekyll & Plugins     #
@@ -73,8 +73,12 @@ github_skip_forks: true
 twitter_user: muslihzarth
 twitter_tweet_button: true
 
+# Twitter
+linkedin_user: muslihzarth
+# twitter_tweet_button: true
+
 # Google +1
-google_plus_one: false
+google_plus_one: true
 google_plus_one_size: medium
 
 # Google Plus Profile
