@@ -4,7 +4,7 @@
   <title><![CDATA[I'm <em>muslih</em>, a web developer, nurse,<br/> coffee addict, and late-night insomniac.]]></title>
   <link href="http://muslih.zeen-studio.com/atom.xml" rel="self"/>
   <link href="http://muslih.zeen-studio.com/"/>
-  <updated>2013-06-13T11:08:24+08:00</updated>
+  <updated>2013-06-13T11:14:00+08:00</updated>
   <id>http://muslih.zeen-studio.com/</id>
   <author>
     <name><![CDATA[Muslih]]></name>
@@ -39,7 +39,7 @@
 </span><span class='line'>require 'sinatra/reloader' if development?</span></code></pre></td></tr></table></div></figure>
 
 
-<p>Now, i just could say good bay <code>Ctrl+C</code> i do not use you anymore, all i ned just only simple reload my page for my exsiting code.</p>
+<p>Now, i just could say good bye <code>Ctrl+C</code> i do not use you anymore, all i need just only simple reload my page for my exsiting code.</p>
 ]]></content>
   </entry>
   

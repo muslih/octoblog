@@ -21,6 +21,6 @@ Then i just simply add new live below `require 'sinatra'` line,
 require 'sinatra'
 require 'sinatra/reloader' if development?
 ```
-Now, i just could say good bay `Ctrl+C` i do not use you anymore, all i ned just only simple reload my page for my exsiting code. 
+Now, i just could say good bye `Ctrl+C` i do not use you anymore, all i need just only simple reload my page for my exsiting code. 
 
 
