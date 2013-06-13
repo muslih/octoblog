@@ -16,7 +16,7 @@ Finally, i found the solution for this bored thing, it's was worth using sinatra
 sudo gem instal sinatra-contrib
 ```
 
-Then i just simply add new live above `require 'sinatra'` line, 
+Then i just simply add new live below `require 'sinatra'` line, 
 ```
 require 'sinatra'
 require 'sinatra/reloader' if development?

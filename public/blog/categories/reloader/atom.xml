@@ -4,7 +4,7 @@
   <title><![CDATA[Category: reloader | I'm <em>muslih</em>, a web developer, nurse,<br/> coffee addict, and late-night insomniac.]]></title>
   <link href="http://muslih.zeen-studio.com/blog/categories/reloader/atom.xml" rel="self"/>
   <link href="http://muslih.zeen-studio.com/"/>
-  <updated>2013-06-13T11:01:46+08:00</updated>
+  <updated>2013-06-13T11:08:24+08:00</updated>
   <id>http://muslih.zeen-studio.com/</id>
   <author>
     <name><![CDATA[Muslih]]></name>
@@ -31,7 +31,7 @@
 sudo gem instal sinatra-contrib
 </code></p>
 
-<p>Then i just simply add new live above <code>require 'sinatra'</code> line,
+<p>Then i just simply add new live below <code>require 'sinatra'</code> line,
 <code>
 require 'sinatra'
 require 'sinatra/reloader' if development?
