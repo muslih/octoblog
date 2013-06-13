@@ -4,7 +4,7 @@
   <title><![CDATA[Category: octopress | I'm <em>muslih</em>, a web developer, nurse,<br/> coffee addict, and late-night insomniac.]]></title>
   <link href="http://muslih.zeen-studio.com/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://muslih.zeen-studio.com/"/>
-  <updated>2013-06-10T15:45:07+08:00</updated>
+  <updated>2013-06-13T11:01:46+08:00</updated>
   <id>http://muslih.zeen-studio.com/</id>
   <author>
     <name><![CDATA[Muslih]]></name>
@@ -20,12 +20,14 @@
     <id>http://muslih.zeen-studio.com/blog/2013/06/10/finally-i-movin-to-octopress</id>
     <content type="html"><![CDATA[<p>Today i decided my self to use octopress, the big reason i movin to this new stuff is a new challange, i can learn more about Ruby programming through this stuff, as ma lecturer said &lsquo;life simple and learn forever&rsquo; <!-- more --></p>
 
-<p>The big problem (depend on me) is getting errors when i running
+<p>The big problem (depend on me) was getting errors when i running
 <code>
 rake generate
 rake preview
 </code>
-on my &lsquo;darkfury&rsquo; netbook, setting everything set up and working correctly is probably going to be a pain in the ass, my effort was not useless i found i have different rake version, and i passed it by using</p>
+on my &lsquo;darkfury&rsquo; netbook, setting everything set up and working correctly is probably going to be a pain in the ass.</p>
+
+<p>Ma effort was not useless, finally i found the problem, it was different rake version, and i settle it down by using</p>
 
 <p><code>
 bundle exec rake generate

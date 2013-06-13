@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: sinatra | I'm <em>muslih</em>, a web developer, nurse,<br/> coffee addict, and late-night insomniac.]]></title>
+  <link href="http://muslih.zeen-studio.com/blog/categories/sinatra/atom.xml" rel="self"/>
+  <link href="http://muslih.zeen-studio.com/"/>
+  <updated>2013-06-13T11:01:46+08:00</updated>
+  <id>http://muslih.zeen-studio.com/</id>
+  <author>
+    <name><![CDATA[Muslih]]></name>
+    <email><![CDATA[muslihzarth@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Sinatra Reloader]]></title>
+    <link href="http://muslih.zeen-studio.com/blog/2013/06/12/sinatra-reloader/"/>
+    <updated>2013-06-12T18:30:00+08:00</updated>
+    <id>http://muslih.zeen-studio.com/blog/2013/06/12/sinatra-reloader</id>
+    <content type="html"><![CDATA[<p>I started learn <a href="http://sinatrarb.com">sinatra</a> since three months ago, exactly when i started learn both <a href="http://sass-lang.com/">sass</a> and <a href="http://compass-style.org/">compass</a>, the funny and usefull css preprocessor i ever met even though i never used less at all, i think sass had enough for me :D</p>
+
+<!-- more -->
+
+
+<p>Even <a href="http://sinatrarb.com">sinatra</a> is a simple and elegant for me, i still found a bored thing, ya, when i&rsquo;ve made a change to my code, i have to go back to the terminal and hold down <code>Ctrl+C</code>, i have to restarting every change on my file, and it could become tiresome for me. It doesn&rsquo;t mean i hate sinatra :D</p>
+
+<p>Finally, i found the solution for this bored thing, it&rsquo;s was worth using sinatra reloader, i just simply type on ma darkfury</p>
+
+<p><code>
+sudo gem instal sinatra-contrib
+</code></p>
+
+<p>Then i just simply add new live above <code>require 'sinatra'</code> line,
+<code>
+require 'sinatra'
+require 'sinatra/reloader' if development?
+</code>
+Now, i just could say good bay <code>Ctrl+C</code> i do not use you anymore, all i ned just only simple reload my page for my exsiting code.</p>
+]]></content>
+  </entry>
+  
+</feed>

@@ -2,14 +2,18 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://muslih.zeen-studio.com/blog/2013/06/10/finally-i-movin-to-octopress/</loc>
-        <lastmod>2013-06-10T15:44:36+08:00</lastmod>
+        <lastmod>2013-06-12T19:18:50+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://muslih.zeen-studio.com/blog/2013/06/12/sinatra-reloader/</loc>
+        <lastmod>2013-06-13T11:01:43+08:00</lastmod>
     </url>
     <url>
         <loc>http://muslih.zeen-studio.com/blog/archives/</loc>
-        <lastmod>2013-06-10T15:44:36+08:00</lastmod>
+        <lastmod>2013-06-13T11:01:43+08:00</lastmod>
     </url>
     <url>
         <loc>http://muslih.zeen-studio.com/</loc>
-        <lastmod>2013-06-10T15:44:36+08:00</lastmod>
+        <lastmod>2013-06-13T11:01:43+08:00</lastmod>
     </url>
 </urlset>

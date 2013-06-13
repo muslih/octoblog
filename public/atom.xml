@@ -4,7 +4,7 @@
   <title><![CDATA[I'm <em>muslih</em>, a web developer, nurse,<br/> coffee addict, and late-night insomniac.]]></title>
   <link href="http://muslih.zeen-studio.com/atom.xml" rel="self"/>
   <link href="http://muslih.zeen-studio.com/"/>
-  <updated>2013-06-10T15:45:07+08:00</updated>
+  <updated>2013-06-13T11:01:46+08:00</updated>
   <id>http://muslih.zeen-studio.com/</id>
   <author>
     <name><![CDATA[Muslih]]></name>
@@ -14,13 +14,43 @@
 
   
   <entry>
+    <title type="html"><![CDATA[Sinatra Reloader]]></title>
+    <link href="http://muslih.zeen-studio.com/blog/2013/06/12/sinatra-reloader/"/>
+    <updated>2013-06-12T18:30:00+08:00</updated>
+    <id>http://muslih.zeen-studio.com/blog/2013/06/12/sinatra-reloader</id>
+    <content type="html"><![CDATA[<p>I started learn <a href="http://sinatrarb.com">sinatra</a> since three months ago, exactly when i started learn both <a href="http://sass-lang.com/">sass</a> and <a href="http://compass-style.org/">compass</a>, the funny and usefull css preprocessor i ever met even though i never used less at all, i think sass had enough for me :D</p>
+
+<!-- more -->
+
+
+<p>Even <a href="http://sinatrarb.com">sinatra</a> is a simple and elegant for me, i still found a bored thing, ya, when i&rsquo;ve made a change to my code, i have to go back to the terminal and hold down <code>Ctrl+C</code>, i have to restarting every change on my file, and it could become tiresome for me. It doesn&rsquo;t mean i hate sinatra :D</p>
+
+<p>Finally, i found the solution for this bored thing, it&rsquo;s was worth using sinatra reloader, i just simply type on ma darkfury</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo gem instal sinatra-contrib</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Then i just simply add new live above <code>require 'sinatra'</code> line,</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>require 'sinatra'
+</span><span class='line'>require 'sinatra/reloader' if development?</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Now, i just could say good bay <code>Ctrl+C</code> i do not use you anymore, all i ned just only simple reload my page for my exsiting code.</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[finally i movin to octopress]]></title>
     <link href="http://muslih.zeen-studio.com/blog/2013/06/10/finally-i-movin-to-octopress/"/>
     <updated>2013-06-10T11:49:00+08:00</updated>
     <id>http://muslih.zeen-studio.com/blog/2013/06/10/finally-i-movin-to-octopress</id>
     <content type="html"><![CDATA[<p>Today i decided my self to use octopress, the big reason i movin to this new stuff is a new challange, i can learn more about Ruby programming through this stuff, as ma lecturer said &lsquo;life simple and learn forever&rsquo; <!-- more --></p>
 
-<p>The big problem (depend on me) is getting errors when i running</p>
+<p>The big problem (depend on me) was getting errors when i running</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -28,7 +58,9 @@
 </span><span class='line'>rake preview</span></code></pre></td></tr></table></div></figure>
 
 
-<p>on my &lsquo;darkfury&rsquo; netbook, setting everything set up and working correctly is probably going to be a pain in the ass, my effort was not useless i found i have different rake version, and i passed it by using</p>
+<p>on my &lsquo;darkfury&rsquo; netbook, setting everything set up and working correctly is probably going to be a pain in the ass.</p>
+
+<p>Ma effort was not useless, finally i found the problem, it was different rake version, and i settle it down by using</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>

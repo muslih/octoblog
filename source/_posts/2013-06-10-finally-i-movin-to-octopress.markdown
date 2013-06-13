@@ -8,12 +8,14 @@ categories: blog octopress
 
 Today i decided my self to use octopress, the big reason i movin to this new stuff is a new challange, i can learn more about Ruby programming through this stuff, as ma lecturer said 'life simple and learn forever' <!-- more -->
 
-The big problem (depend on me) is getting errors when i running
+The big problem (depend on me) was getting errors when i running
 ```
 rake generate
 rake preview
 ```
-on my 'darkfury' netbook, setting everything set up and working correctly is probably going to be a pain in the ass, my effort was not useless i found i have different rake version, and i passed it by using  
+on my 'darkfury' netbook, setting everything set up and working correctly is probably going to be a pain in the ass.
+
+Ma effort was not useless, finally i found the problem, it was different rake version, and i settle it down by using  
 
 ```
 bundle exec rake generate
