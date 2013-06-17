@@ -224,3 +224,9 @@ p {
 .recent_posts {
   list-style-type: disc;
 }
+
+@media (max-width: 350px){
+  #hero{
+    padding:10px;
+  }
+}
