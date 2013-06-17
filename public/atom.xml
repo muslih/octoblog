@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[I'm <em>muslih</em>, a web developer, nurse,<br/> coffee addict, and late-night insomniac.]]></title>
+  <title><![CDATA[I'm <em>muslih</em>, a nurse who have mental illness called <em>creativity</em>]]></title>
   <link href="http://muslih.zeen-studio.com/atom.xml" rel="self"/>
   <link href="http://muslih.zeen-studio.com/"/>
-  <updated>2013-06-13T11:14:00+08:00</updated>
+  <updated>2013-06-17T09:02:10+08:00</updated>
   <id>http://muslih.zeen-studio.com/</id>
   <author>
     <name><![CDATA[Muslih]]></name>
@@ -25,7 +25,7 @@
 
 <p>Even <a href="http://sinatrarb.com">sinatra</a> is a simple and elegant for me, i still found a bored thing, ya, when i&rsquo;ve made a change to my code, i have to go back to the terminal and hold down <code>Ctrl+C</code>, i have to restarting every change on my file, and it could become tiresome for me. It doesn&rsquo;t mean i hate sinatra :D</p>
 
-<p>Finally, i found the solution for this bored thing, it&rsquo;s was worth using sinatra reloader, i just simply type on ma darkfury</p>
+<p>Finally, i found the solution for this bored thing, it&rsquo;s was worth using sinatra reloader, i just simply type on ma <code>darkfury</code></p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>sudo gem instal sinatra-contrib</span></code></pre></td></tr></table></div></figure>

@@ -10,7 +10,7 @@ I started learn [sinatra](http://sinatrarb.com) since three months ago, exactly 
 <!-- more -->
 Even [sinatra](http://sinatrarb.com) is a simple and elegant for me, i still found a bored thing, ya, when i've made a change to my code, i have to go back to the terminal and hold down `Ctrl+C`, i have to restarting every change on my file, and it could become tiresome for me. It doesn't mean i hate sinatra :D
 
-Finally, i found the solution for this bored thing, it's was worth using sinatra reloader, i just simply type on ma darkfury 
+Finally, i found the solution for this bored thing, it's was worth using sinatra reloader, i just simply type on ma `darkfury`
 
 ```
 sudo gem instal sinatra-contrib
