@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: sinatra | <h1>Muslih's blog</h1><h2>A nurse who has mental illness called <em>creativity</em></h2>]]></title>
-  <link href="http://muslih.zeen-studio.com/blog/categories/sinatra/atom.xml" rel="self"/>
+  <title><![CDATA[Category: slim | <h1>Muslih's blog</h1><h2>A nurse who has mental illness called <em>creativity</em></h2>]]></title>
+  <link href="http://muslih.zeen-studio.com/blog/categories/slim/atom.xml" rel="self"/>
   <link href="http://muslih.zeen-studio.com/"/>
   <updated>2013-07-10T08:45:46+08:00</updated>
   <id>http://muslih.zeen-studio.com/</id>
@@ -73,33 +73,6 @@ set :views, :scss => &lsquo;views/sass/&rsquo;, :default => &lsquo;views&rsquo;<
 when i run it, everything is doing pretty well, and i love it so much</p>
 
 <p>If you want to see the result file, just feel free to open this <a href="https://github.com/muslih/sinatra-custom-sass-directory">link</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Sinatra Reloader]]></title>
-    <link href="http://muslih.zeen-studio.com/blog/2013/06/12/sinatra-reloader/"/>
-    <updated>2013-06-12T18:30:00+08:00</updated>
-    <id>http://muslih.zeen-studio.com/blog/2013/06/12/sinatra-reloader</id>
-    <content type="html"><![CDATA[<p>I started to learn <a href="http://sinatrarb.com">sinatra</a> since three months ago, exactly when I started to learn both <a href="http://sass-lang.com/">sass</a> and <a href="http://compass-style.org/">compass</a>, the funny and useful css preprocessor I ever met even though I never used less at all, I think sass had enough for me :D</p>
-
-<!-- more -->
-
-
-<p>Even <a href="http://sinatrarb.com">sinatra</a> is a simple and elegant for me, i still found a bored thing, ya, when i&rsquo;ve made a change to my code, i have to go back to the terminal and hold down <code>Ctrl+C</code>, i have to restart every change on my file, and it could become tiresome for me. It doesn&rsquo;t mean i hate sinatra :D</p>
-
-<p>Finally, i found the solution for this bored thing, it&rsquo;s was worth using sinatra reloader, i just simply type on ma <code>darkfury</code></p>
-
-<p><code>
-sudo gem instal sinatra-contrib
-</code></p>
-
-<p>Then i just simply add new live below <code>require 'sinatra'</code> line,
-<code>
-require 'sinatra'
-require 'sinatra/reloader' if development?
-</code>
-Now, i just could say good bye <code>Ctrl+C</code> i do not use you anymore, all i need just only simple reload my page for my existing code.</p>
 ]]></content>
   </entry>
   

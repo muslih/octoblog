@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[<h1>Muslih&#8217;s blog</h1><h2>A nurse who have mental illness called <em>creativity</em></h2>]]></title>
+  <title><![CDATA[<h1>Muslih&#8217;s blog</h1><h2>A nurse who has mental illness called <em>creativity</em></h2>]]></title>
   <link href="http://muslih.zeen-studio.com/atom.xml" rel="self"/>
   <link href="http://muslih.zeen-studio.com/"/>
-  <updated>2013-06-25T11:41:36+08:00</updated>
+  <updated>2013-07-10T08:45:46+08:00</updated>
   <id>http://muslih.zeen-studio.com/</id>
   <author>
     <name><![CDATA[Muslih]]></name>
@@ -14,16 +14,97 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Sinatra Reloader]]></title>
-    <link href="http://muslih.zeen-studio.com/blog/2013/06/12/sinatra-reloader/"/>
-    <updated>2013-06-12T18:30:00+08:00</updated>
-    <id>http://muslih.zeen-studio.com/blog/2013/06/12/sinatra-reloader</id>
-    <content type="html"><![CDATA[<p>I started learn <a href="http://sinatrarb.com">sinatra</a> since three months ago, exactly when i started learn both <a href="http://sass-lang.com/">sass</a> and <a href="http://compass-style.org/">compass</a>, the funny and usefull css preprocessor i ever met even though i never used less at all, i think sass had enough for me :D</p>
+    <title type="html"><![CDATA[Custom SASS Directory With Sinatra]]></title>
+    <link href="http://muslih.zeen-studio.com/blog/2013/07/10/custom-sass-directory-with-sinatra/"/>
+    <updated>2013-07-10T03:34:00+08:00</updated>
+    <id>http://muslih.zeen-studio.com/blog/2013/07/10/custom-sass-directory-with-sinatra</id>
+    <content type="html"><![CDATA[<p>A few days ago I started using <a href="http://sass-lang.com">sass</a> on my <a href="http://sinatrarb.com">sinatra</a> web project. Instead of variable, mixin features, it&rsquo;s also the best solution to save my time in developing on boring css coding.</p>
 
 <!-- more -->
 
 
-<p>Even <a href="http://sinatrarb.com">sinatra</a> is a simple and elegant for me, i still found a bored thing, ya, when i&rsquo;ve made a change to my code, i have to go back to the terminal and hold down <code>Ctrl+C</code>, i have to restarting every change on my file, and it could become tiresome for me. It doesn&rsquo;t mean i hate sinatra :D</p>
+<p>To use this stuff, i should ensure that i require this gem ant top of my application file, and then i have to create a route handler for it. Simple, isn&rsquo;t it?</p>
+
+<figure class='code'><figcaption><span>main.rb</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="nb">require</span> <span class="s1">&#39;sass&#39;</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">get</span><span class="p">(</span><span class="s1">&#39;/styles.css&#39;</span><span class="p">){</span> <span class="n">scss</span> <span class="ss">:styles</span> <span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>With all of this simplicity, i still dont satisfied yet with the default folder, each time i have to put the sass on views directory, what a mess!</p>
+
+<p>Finally, i find a solution to make my own custom directiory, i just need to set up the sass directory on the main app file, in this case i wanted to put the sass file on scss directory, and it will be below :</p>
+
+<figure class='code'><figcaption><span>main.rb</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">set</span> <span class="ss">:views</span><span class="p">,</span> <span class="ss">:scss</span> <span class="o">=&gt;</span> <span class="s1">&#39;views/sass/&#39;</span><span class="p">,</span> <span class="ss">:default</span> <span class="o">=&gt;</span> <span class="s1">&#39;views&#39;</span>
+</span><span class='line'>
+</span><span class='line'> <span class="n">helpers</span> <span class="k">do</span>
+</span><span class='line'>   <span class="k">def</span> <span class="nf">find_template</span><span class="p">(</span><span class="n">views</span><span class="p">,</span> <span class="nb">name</span><span class="p">,</span> <span class="n">engine</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">block</span><span class="p">)</span>
+</span><span class='line'>     <span class="n">_</span><span class="p">,</span> <span class="n">folder</span> <span class="o">=</span> <span class="n">views</span><span class="o">.</span><span class="n">detect</span> <span class="p">{</span> <span class="o">|</span><span class="n">k</span><span class="p">,</span><span class="n">v</span><span class="o">|</span> <span class="n">engine</span> <span class="o">==</span> <span class="no">Tilt</span><span class="o">[</span><span class="n">k</span><span class="o">]</span> <span class="p">}</span>
+</span><span class='line'>     <span class="n">folder</span> <span class="o">||=</span> <span class="n">views</span><span class="o">[</span><span class="ss">:default</span><span class="o">]</span>
+</span><span class='line'>     <span class="k">super</span><span class="p">(</span><span class="n">folder</span><span class="p">,</span> <span class="nb">name</span><span class="p">,</span> <span class="n">engine</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">block</span><span class="p">)</span>
+</span><span class='line'>   <span class="k">end</span>
+</span><span class='line'> <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'><span class="n">get</span> <span class="s1">&#39;/css/styles.css&#39;</span> <span class="k">do</span>
+</span><span class='line'>  <span class="n">scss</span> <span class="ss">:styles</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>with tree structure</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>├── main.rb
+</span><span class='line'>└── views
+</span><span class='line'>    ├── main.slim
+</span><span class='line'>    └── sass
+</span><span class='line'>        └── styles.scss
+</span><span class='line'>
+</span><span class='line'>2 directories, 3 files
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>when i run it, everything is doing pretty well, and i love it so much</p>
+
+<p>If you want to see the result file, just feel free to open this <a href="https://github.com/muslih/sinatra-custom-sass-directory">link</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Sinatra Reloader]]></title>
+    <link href="http://muslih.zeen-studio.com/blog/2013/06/12/sinatra-reloader/"/>
+    <updated>2013-06-12T18:30:00+08:00</updated>
+    <id>http://muslih.zeen-studio.com/blog/2013/06/12/sinatra-reloader</id>
+    <content type="html"><![CDATA[<p>I started to learn <a href="http://sinatrarb.com">sinatra</a> since three months ago, exactly when I started to learn both <a href="http://sass-lang.com/">sass</a> and <a href="http://compass-style.org/">compass</a>, the funny and useful css preprocessor I ever met even though I never used less at all, I think sass had enough for me :D</p>
+
+<!-- more -->
+
+
+<p>Even <a href="http://sinatrarb.com">sinatra</a> is a simple and elegant for me, i still found a bored thing, ya, when i&rsquo;ve made a change to my code, i have to go back to the terminal and hold down <code>Ctrl+C</code>, i have to restart every change on my file, and it could become tiresome for me. It doesn&rsquo;t mean i hate sinatra :D</p>
 
 <p>Finally, i found the solution for this bored thing, it&rsquo;s was worth using sinatra reloader, i just simply type on ma <code>darkfury</code></p>
 
@@ -39,7 +120,7 @@
 </span><span class='line'>require 'sinatra/reloader' if development?</span></code></pre></td></tr></table></div></figure>
 
 
-<p>Now, i just could say good bye <code>Ctrl+C</code> i do not use you anymore, all i need just only simple reload my page for my exsiting code.</p>
+<p>Now, i just could say good bye <code>Ctrl+C</code> i do not use you anymore, all i need just only simple reload my page for my existing code.</p>
 ]]></content>
   </entry>
   

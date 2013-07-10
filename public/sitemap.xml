@@ -6,14 +6,20 @@
     </url>
     <url>
         <loc>http://muslih.zeen-studio.com/blog/2013/06/12/sinatra-reloader/</loc>
-        <lastmod>2013-06-25T10:39:45+08:00</lastmod>
+        <lastmod>2013-06-26T16:54:25+08:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://muslih.zeen-studio.com/blog/2013/07/10/custom-sass-directory-with-sinatra/
+        </loc>
+        <lastmod>2013-07-10T08:45:45+08:00</lastmod>
     </url>
     <url>
         <loc>http://muslih.zeen-studio.com/blog/archives/</loc>
-        <lastmod>2013-06-25T10:39:45+08:00</lastmod>
+        <lastmod>2013-07-10T08:45:45+08:00</lastmod>
     </url>
     <url>
         <loc>http://muslih.zeen-studio.com/</loc>
-        <lastmod>2013-06-25T10:39:45+08:00</lastmod>
+        <lastmod>2013-07-10T08:45:45+08:00</lastmod>
     </url>
 </urlset>
