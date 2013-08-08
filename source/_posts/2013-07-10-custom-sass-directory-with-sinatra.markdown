@@ -11,7 +11,7 @@ A few days ago I started using [sass](http://sass-lang.com) on my [sinatra](http
 To use this stuff, i should ensure that i require this gem ant top of my application file, and then i have to create a route handler for it. Simple, isn't it? 
 
 
-```ruby main.rb
+```[ruby] [main.rb]
 require 'sass'
 
 get('/styles.css'){ scss :styles }
@@ -20,22 +20,21 @@ With all of this simplicity, i still dont satisfied yet with the default folder,
 
 Finally, i find a solution to make my own custom directiory, i just need to set up the sass directory on the main app file, in this case i wanted to put the sass file on scss directory, and it will be below :
 
-```ruby main.rb
+
+```[ruby] [main.rb]
 set :views, :scss => 'views/sass/', :default => 'views'
-
- helpers do
-   def find_template(views, name, engine, &block)
-     _, folder = views.detect { |k,v| engine == Tilt[k] }
-     folder ||= views[:default]
-     super(folder, name, engine, &block)
-   end
- end
-
-
+helpers do
+	def find_template(views, name, engine, &block)
+		_, folder = views.detect { |k,v| engine == Tilt[k] }
+		folder ||= views[:default]
+		super(folder, name, engine, &block)
+	end
+end
 get '/css/styles.css' do
 	scss :styles
 end
 ```
+
 
 with tree structure 
 

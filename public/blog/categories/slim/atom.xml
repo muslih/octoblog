@@ -4,7 +4,7 @@
   <title><![CDATA[Category: slim | <h1>Muslih's blog</h1><h2>A nurse who has mental illness called <em>creativity</em></h2>]]></title>
   <link href="http://muslih.zeen-studio.com/blog/categories/slim/atom.xml" rel="self"/>
   <link href="http://muslih.zeen-studio.com/"/>
-  <updated>2013-07-10T08:45:46+08:00</updated>
+  <updated>2013-07-10T12:15:43+08:00</updated>
   <id>http://muslih.zeen-studio.com/</id>
   <author>
     <name><![CDATA[Muslih]]></name>
@@ -25,7 +25,7 @@
 
 <p>To use this stuff, i should ensure that i require this gem ant top of my application file, and then i have to create a route handler for it. Simple, isn&rsquo;t it?</p>
 
-<p>```ruby main.rb
+<p>```[ruby] [main.rb]
 require &lsquo;sass&rsquo;</p>
 
 <p>get(&lsquo;/styles.css&rsquo;){ scss :styles }
@@ -34,21 +34,19 @@ With all of this simplicity, i still dont satisfied yet with the default folder,
 
 <p>Finally, i find a solution to make my own custom directiory, i just need to set up the sass directory on the main app file, in this case i wanted to put the sass file on scss directory, and it will be below :</p>
 
-<p>```ruby main.rb
-set :views, :scss => &lsquo;views/sass/&rsquo;, :default => &lsquo;views&rsquo;</p>
+<p>```[ruby] [main.rb]
+set :views, :scss => &lsquo;views/sass/&rsquo;, :default => &lsquo;views&rsquo;
+helpers do</p>
 
-<p> helpers do
-   def find_template(views, name, engine, &amp;block)</p>
-
-<pre><code> _, folder = views.detect { |k,v| engine == Tilt[k] }
- folder ||= views[:default]
- super(folder, name, engine, &amp;block)
+<pre><code>def find_template(views, name, engine, &amp;block)
+    _, folder = views.detect { |k,v| engine == Tilt[k] }
+    folder ||= views[:default]
+    super(folder, name, engine, &amp;block)
+end
 </code></pre>
 
-<p>   end
- end</p>
-
-<p>get &lsquo;/css/styles.css&rsquo; do</p>
+<p>end
+get &lsquo;/css/styles.css&rsquo; do</p>
 
 <pre><code>scss :styles
 </code></pre>
