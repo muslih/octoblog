@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: ruby | <h1>Muslih's blog</h1><h2>A nurse who has mental illness called <em>creativity</em></h2>]]></title>
-  <link href="http://muslih.zeen-studio.com/blog/categories/ruby/atom.xml" rel="self"/>
-  <link href="http://muslih.zeen-studio.com/"/>
-  <updated>2013-07-10T12:15:43+08:00</updated>
-  <id>http://muslih.zeen-studio.com/</id>
+  <link href="http://muslih.github.io/blog/categories/ruby/atom.xml" rel="self"/>
+  <link href="http://muslih.github.io/"/>
+  <updated>2013-09-08T14:50:43+08:00</updated>
+  <id>http://muslih.github.io/</id>
   <author>
     <name><![CDATA[Muslih]]></name>
     <email><![CDATA[muslihzarth@gmail.com]]></email>
@@ -15,15 +15,15 @@
   
   <entry>
     <title type="html"><![CDATA[Custom SASS Directory With Sinatra]]></title>
-    <link href="http://muslih.zeen-studio.com/blog/2013/07/10/custom-sass-directory-with-sinatra/"/>
+    <link href="http://muslih.github.io/blog/2013/07/10/custom-sass-directory-with-sinatra/"/>
     <updated>2013-07-10T03:34:00+08:00</updated>
-    <id>http://muslih.zeen-studio.com/blog/2013/07/10/custom-sass-directory-with-sinatra</id>
+    <id>http://muslih.github.io/blog/2013/07/10/custom-sass-directory-with-sinatra</id>
     <content type="html"><![CDATA[<p>A few days ago I started using <a href="http://sass-lang.com">sass</a> on my <a href="http://sinatrarb.com">sinatra</a> web project. Instead of variable, mixin features, it&rsquo;s also the best solution to save my time in developing on boring css coding.</p>
 
 <!-- more -->
 
 
-<p>To use this stuff, i should ensure that i require this gem ant top of my application file, and then i have to create a route handler for it. Simple, isn&rsquo;t it?</p>
+<p>To use this stuff, i should ensure that i require this gem at top of my application file, and then i have to create a route handler for it. Simple, isn&rsquo;t it?</p>
 
 <p>```[ruby] [main.rb]
 require &lsquo;sass&rsquo;</p>
@@ -76,9 +76,9 @@ when i run it, everything is doing pretty well, and i love it so much</p>
   
   <entry>
     <title type="html"><![CDATA[Sinatra Reloader]]></title>
-    <link href="http://muslih.zeen-studio.com/blog/2013/06/12/sinatra-reloader/"/>
+    <link href="http://muslih.github.io/blog/2013/06/12/sinatra-reloader/"/>
     <updated>2013-06-12T18:30:00+08:00</updated>
-    <id>http://muslih.zeen-studio.com/blog/2013/06/12/sinatra-reloader</id>
+    <id>http://muslih.github.io/blog/2013/06/12/sinatra-reloader</id>
     <content type="html"><![CDATA[<p>I started to learn <a href="http://sinatrarb.com">sinatra</a> since three months ago, exactly when I started to learn both <a href="http://sass-lang.com/">sass</a> and <a href="http://compass-style.org/">compass</a>, the funny and useful css preprocessor I ever met even though I never used less at all, I think sass had enough for me :D</p>
 
 <!-- more -->

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: reloader | <h1>Muslih's blog</h1><h2>A nurse who has mental illness called <em>creativity</em></h2>]]></title>
-  <link href="http://muslih.zeen-studio.com/blog/categories/reloader/atom.xml" rel="self"/>
-  <link href="http://muslih.zeen-studio.com/"/>
-  <updated>2013-07-10T12:15:43+08:00</updated>
-  <id>http://muslih.zeen-studio.com/</id>
+  <link href="http://muslih.github.io/blog/categories/reloader/atom.xml" rel="self"/>
+  <link href="http://muslih.github.io/"/>
+  <updated>2013-09-08T14:50:43+08:00</updated>
+  <id>http://muslih.github.io/</id>
   <author>
     <name><![CDATA[Muslih]]></name>
     <email><![CDATA[muslihzarth@gmail.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Sinatra Reloader]]></title>
-    <link href="http://muslih.zeen-studio.com/blog/2013/06/12/sinatra-reloader/"/>
+    <link href="http://muslih.github.io/blog/2013/06/12/sinatra-reloader/"/>
     <updated>2013-06-12T18:30:00+08:00</updated>
-    <id>http://muslih.zeen-studio.com/blog/2013/06/12/sinatra-reloader</id>
+    <id>http://muslih.github.io/blog/2013/06/12/sinatra-reloader</id>
     <content type="html"><![CDATA[<p>I started to learn <a href="http://sinatrarb.com">sinatra</a> since three months ago, exactly when I started to learn both <a href="http://sass-lang.com/">sass</a> and <a href="http://compass-style.org/">compass</a>, the funny and useful css preprocessor I ever met even though I never used less at all, I think sass had enough for me :D</p>
 
 <!-- more -->

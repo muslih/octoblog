@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: octopress | <h1>Muslih's blog</h1><h2>A nurse who has mental illness called <em>creativity</em></h2>]]></title>
-  <link href="http://muslih.zeen-studio.com/blog/categories/octopress/atom.xml" rel="self"/>
-  <link href="http://muslih.zeen-studio.com/"/>
-  <updated>2013-07-10T12:15:43+08:00</updated>
-  <id>http://muslih.zeen-studio.com/</id>
+  <link href="http://muslih.github.io/blog/categories/octopress/atom.xml" rel="self"/>
+  <link href="http://muslih.github.io/"/>
+  <updated>2013-09-08T14:50:43+08:00</updated>
+  <id>http://muslih.github.io/</id>
   <author>
     <name><![CDATA[Muslih]]></name>
     <email><![CDATA[muslihzarth@gmail.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[finally i movin to octopress]]></title>
-    <link href="http://muslih.zeen-studio.com/blog/2013/06/10/finally-i-movin-to-octopress/"/>
+    <link href="http://muslih.github.io/blog/2013/06/10/finally-i-movin-to-octopress/"/>
     <updated>2013-06-10T11:49:00+08:00</updated>
-    <id>http://muslih.zeen-studio.com/blog/2013/06/10/finally-i-movin-to-octopress</id>
+    <id>http://muslih.github.io/blog/2013/06/10/finally-i-movin-to-octopress</id>
     <content type="html"><![CDATA[<p>Today i decided my self to use octopress, the big reason i movin to this new stuff is a new challange, i can learn more about Ruby programming through this stuff, as ma lecturer said &lsquo;life simple and learn forever&rsquo; <!-- more --></p>
 
 <p>The big problem (depend on me) was getting errors when i running

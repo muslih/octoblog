@@ -8,7 +8,7 @@ categories: ruby sinatra slim
 
 A few days ago I started using [sass](http://sass-lang.com) on my [sinatra](http://sinatrarb.com) web project. Instead of variable, mixin features, it's also the best solution to save my time in developing on boring css coding.
 <!-- more -->
-To use this stuff, i should ensure that i require this gem ant top of my application file, and then i have to create a route handler for it. Simple, isn't it? 
+To use this stuff, i should ensure that i require this gem at top of my application file, and then i have to create a route handler for it. Simple, isn't it? 
 
 
 ```[ruby] [main.rb]
